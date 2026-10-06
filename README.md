@@ -127,7 +127,7 @@ To give Claude autonomous access to web scraping and condensing, add this to you
   "mcpServers": {
     "quickbrew": {
       "command": "npx",
-      "args": ["-y", "quickbrew-mcp"],
+      "args": ["-y", "quickbrew-mcp-server"],
       "env": {
         "QUICKBREW_PRIVATE_KEY": "your-agent-base-wallet-private-key"
       }
