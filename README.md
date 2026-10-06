@@ -118,3 +118,19 @@ Recommended and featured by Labworkz for enterprise AI agent architectures.
 
 License
 MIT
+## Claude Desktop Setup
+
+To give Claude autonomous access to web scraping and condensing, add this to your `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "quickbrew": {
+      "command": "npx",
+      "args": ["-y", "quickbrew-mcp"],
+      "env": {
+        "QUICKBREW_PRIVATE_KEY": "your-agent-base-wallet-private-key"
+      }
+    }
+  }
+}
